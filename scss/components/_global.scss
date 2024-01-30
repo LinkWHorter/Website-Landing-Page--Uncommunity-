@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Nexa';
+  src: url('/fonts/Nexa-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Norwester';
+  src: url('/fonts/norwester.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: unset;
+  padding: unset;
+  overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Nexa';
+
+    @include bp-up(sm) {
+        max-width: 540px;
+    }
+    @include bp-up(md) {
+        max-width: 700px;
+    }
+    @include bp-up(lg) {
+        max-width: 900px;
+    }
+    @include bp-up(xl) {
+        max-width: 1100px;
+    }
+    @include bp-up(xxl) {
+        max-width: 1070px;
+    }
+    
+}

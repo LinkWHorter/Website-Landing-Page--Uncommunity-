@@ -1,0 +1,42 @@
+header .menu {
+  font-size: 18px;
+  font-weight: 300;
+  gap: 24px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include bp-up(md) {
+    flex-direction: initial;
+    justify-content: space-between;
+  }
+
+  & > a {
+    transition: color 0.3s;
+    color: black;
+
+    &:hover {
+      color: red;
+    }
+
+    &:active {
+      color: black;
+    }
+  }
+}
+
+.menu a.active {
+  text-transform: uppercase;
+  color: red;
+}
+.hover {
+  text-decoration: none;
+}
+
+.opened { 
+  display: flex;
+}
+
+.closed { 
+  display: none;
+}

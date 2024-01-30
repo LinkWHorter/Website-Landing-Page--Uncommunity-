@@ -1,0 +1,62 @@
+$bl: blue;
+
+header > .container {
+  display: flex;
+  margin: 3.25% auto 3.25% auto;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+
+  @include bp-up(sm) {
+    padding-left: 10px;
+    flex-direction: initial;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    span {
+      &.lo {
+        color: black;  
+      }
+
+      &.go {
+        color: red; 
+      }
+
+      &.lo, &.go {
+        transition: color 0.3s;
+      }
+    }
+
+    @include bp-down(lg) {
+      &:active {
+        span.lo {
+          color: red;
+        }
+        span.go {
+          color: black;
+        }
+      }
+    }
+
+    @include bp-up(lg) {
+      &:hover {
+        span.lo {
+          color: red;
+        }
+        span.go {
+          color: black;
+        }
+      }
+    }
+
+    @include bp-up(md) {
+      flex-direction: initial;
+    }
+  }
+}
