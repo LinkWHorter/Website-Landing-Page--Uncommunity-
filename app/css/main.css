@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Norwester';
-  src: url("/fonts/norwester.otf") format("otf");
+  src: url("/fonts/norwester.otf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -325,7 +325,7 @@ header > .container {
   justify-content: space-between; }
 
 .Work2 input, .Work3 hr {
-  width: 450px; }
+  width: 400px; }
 
 .Work2 input, .Work4 input {
   border: 0px;
