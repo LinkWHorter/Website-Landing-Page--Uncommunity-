@@ -49,11 +49,11 @@ def form():
 
         if not field_content:
             return make_response(jsonify(
-                message=f'Please fill the <strong>{required_field}</strong> field.'
+                message=f'Please fill the {required_field} field.'
             ), 400)
 
     # Return error e-mail address is invalid.
-    if not match('/^\S+@\S+\.\S+$/', data.get('email')):
+    if not bool(match(r'^\S+@\S+\.\S+$', data.get('email'))):
         return make_response(jsonify(
             message=f'Invalid e-mail address, please try again.'
         ), 400)
@@ -72,8 +72,8 @@ def form():
                 },
                 "To": [
                     {
-                        "Email": "skyforgefdk@gmail.com",
-                        "Name": "passenger 1"
+                        "Email": "vlad_kovalev12@ukr.net",
+                        "Name": "Hello World"
                     }
                 ],
                 "TemplateID": int(environment_variables['MAILJET_TEMPLATE_ID']),
@@ -84,6 +84,7 @@ def form():
                     "email": data.get('email'),
                     "phone": data.get('phone'),
                     "organization": data.get('organization'),
+                    "message": data.get('message')
                 }
             }
         ]

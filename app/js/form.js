@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  $('#send_request').click(() => {
+  $('#send-form').click(() => {
     $.ajax({
       url: '/contact-form',
       type: 'POST',
@@ -11,16 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.getElementById('message').value,
       },
       success: (data) => {
-        // @TODO Display block with given data.
         alert('Email sent successfully.');
       },
       error: (xhr, ajaxOptions, thrownError) => {
         if (xhr.status === 400) {
-          // @TODO Display block with given data.
-          alert(thrownError);
+          alert(xhr.responseJSON.message);
         }
         else {
-          // @TODO Display something like "Unexpected error".
           alert('Unexpected error.');
         }
       }
