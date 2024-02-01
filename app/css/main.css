@@ -549,8 +549,11 @@ svg {
   width: 140px; }
   @media (min-width: 568px) {
     .Work2 input, .Work3 hr {
-      width: 250px; } }
+      width: 185px; } }
   @media (min-width: 768px) {
+    .Work2 input, .Work3 hr {
+      width: 250px; } }
+  @media (min-width: 992px) {
     .Work2 input, .Work3 hr {
       width: 400px; } }
 

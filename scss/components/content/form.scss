@@ -43,10 +43,14 @@
     width: 140px;
   
     @include bp-up(sm) {
-      width: 250px;
+      width: 185px;
     }
 
     @include bp-up(md) {
+      width: 250px;
+    }
+
+    @include bp-up(lg) {
       width: 400px;
     }
   }
