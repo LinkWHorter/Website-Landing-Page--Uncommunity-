@@ -26,11 +26,11 @@
           </span>
         </div>
         <div class="menu">
-          <a class="hover active" id="homes" href="#">Home</a>
-          <a class="hover" id="link-two" href="#">Who We Are</a>
-          <a class="hover" id="link-three" href="#">Businness Consulting</a>
-          <a class="hover" id="link-four" href="#">Technology Consulting</a>
-          <a class="hover" id="link-five" href="#">Careers</a>
+          <a class="hover active" title="We are at home" id="homes" href="#">Home</a>
+          <a class="hover" title="Go to source by that link" id="link-two" href="#">Who We Are</a>
+          <a class="hover" title="Go to source by that link" id="link-three" href="#">Businness Consulting</a>
+          <a class="hover" title="Go to source by that link" id="link-four" href="#">Technology Consulting</a>
+          <a class="hover" title="Go to source by that link" id="link-five" href="#">Careers</a>
         </div>
       </div>
     </header>
@@ -40,7 +40,7 @@
           <div class="flex-column">
             <h1>Lorem <br>Ipsum <br>simply <br>dummy</h1>
             <h2>Lorem Ipsum simply dummy</h2>
-            <a id="gets-started" href="#">Get Started</a>
+            <a id="gets-started" title="Перейти до форми" href="#">Get Started</a>
           </div>
           <div class="content-img"><img src="images/cdn-online.png"/></div>
         </div>
@@ -220,7 +220,7 @@
           <div id="lets-works" class="Workess">
             <h2>LET’S WORK TOGETHER</h2>
             <div class="Work1">
-                <div>How Can We Help You?</div><div>></div>
+                <div>How Can We Help You?</div><div title="Clear inputs (without e-mail)" id="tab">></div>
             </div>
             <div><hr></div>
 
@@ -246,15 +246,34 @@
         </div>
       </div>
     </div>
+
     <p class="Magical"><hr class="Mag"></p>
     <footer>
       <div class="container">
         <div class="Foots-Typipoop">
           <div>© Copyright 2022 | All Rights Reserved</div>
-          <div><div>Follow Us:</div><div><a>1</a><a>1</a><a>1</a><a>1</a></div></div>
+          <div class="follow-us">
+            <div>Follow Us:</div>
+            <div>
+              <a id="link-mask1" class="lm1"></a>
+              <a id="link-mask2" class="lm2"></a>
+              <a id="link-mask3" class="lm3"></a>
+              <a id="link-mask4" class="lm4"></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+    
+    <div class="pop-up">
+      <div class="pop-up-message">
+        <p>Do you really want go to that link?:</p>
+        <a id="change-link" href="" target="_blank">http://</a>        
+      </div>
+
+      <div class="mask"></div>
+    </div>
+    
 
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>

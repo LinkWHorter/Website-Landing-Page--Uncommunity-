@@ -72,7 +72,7 @@ def form():
                 },
                 "To": [
                     {
-                        "Email": "vlad_kovalev12@ukr.net",
+                        "Email": data.get('email'),
                         "Name": "Hello World"
                     }
                 ],

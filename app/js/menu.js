@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var contsDiv1 = document.querySelector('.logo');
     var contsDiv2 = document.querySelector('.menu');
+    var popupConst = document.querySelector('.pop-up');
+
     contsDiv2.classList.add('closed');
     // Добавляем обработчик события клика
     contsDiv1.addEventListener('click', function() {
@@ -63,4 +65,66 @@ document.addEventListener("DOMContentLoaded", function() {
       const destinationId = 'lets-works'; // Здесь вы можете определить id динамически
       scrollToDiv(destinationId);
     });
+
+    document.getElementById('tab').addEventListener('click', function() { 
+      // Здесь вы можете определить id динамически
+      document.getElementById('name').value = '';
+      document.getElementById('phone').value = '';
+      document.getElementById('organization').value = '';
+      document.getElementById('message').value = '';
+    });
+
+    let messages;
+
+    document.querySelector('.lm1').addEventListener('click', function() {
+      messages = "https://www.facebook.com/LutskNationalTechnicalUniversity/?locale=ru_RU";
+      document.querySelector('#change-link').textContent = messages;
+      document.querySelector('#change-link').setAttribute('href', messages);
+    });
+
+    document.querySelector('.lm2').addEventListener('click', function() {
+      messages = "https://www.instagram.com/lntu_lutsk/";
+      document.querySelector('#change-link').textContent = messages;
+      document.querySelector('#change-link').setAttribute('href', messages);
+    });
+
+    document.querySelector('.lm3').addEventListener('click', function() {
+      messages = "https://twitter.com/RayonLutsk";
+      document.querySelector('#change-link').textContent = messages;
+      document.querySelector('#change-link').setAttribute('href', messages);
+    });
+
+    document.querySelector('.lm4').addEventListener('click', function() {
+      messages = "https://twitter.com/RayonLutsk";
+      document.querySelector('#change-link').textContent = messages;
+      document.querySelector('#change-link').setAttribute('href', messages);
+    });
+
+    document.querySelector('.lm4').addEventListener('click', function() {
+      messages = "https://ua.linkedin.com/in/кафедра-інженерної-та-комп-ютерної-графіки-лнту-8b4912b6";
+      document.querySelector('#change-link').textContent = messages;
+      document.querySelector('#change-link').setAttribute('href', messages);
+    });
+  });
+
+
+  $(document).ready(function() {
+    $(".pop-up").hide();
+
+    $("#link-mask1").click(function() {
+      $(".pop-up").hide().fadeIn(205);
+    });
+    $("#link-mask2").click(function() {
+      $(".pop-up").hide().fadeIn(205);
+    });
+    $("#link-mask3").click(function() {
+      $(".pop-up").hide().fadeIn(205);
+    });
+    $("#link-mask4").click(function() {
+      $(".pop-up").hide().fadeIn(205);
+    });
+
+    $(".mask").click(function() {
+      $(".pop-up").fadeOut(205);
+    })
   });

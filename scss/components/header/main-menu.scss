@@ -37,6 +37,10 @@ header .menu {
   display: flex;
 }
 
+.opened-mask {
+  display: block;
+}
+
 .closed { 
   display: none;
 }

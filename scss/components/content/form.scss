@@ -1,0 +1,106 @@
+.Workess {
+    width: 80%;
+    margin-top: -500px;
+    margin-left: 10%;
+    z-index: 3;
+    position: relative;
+    & h2 {
+        cursor: default;
+        text-align: center;
+        color: #000;
+        text-align: center;
+        font-family: 'Norwester';
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        z-index: 3;
+        line-height: normal;
+    }
+}
+
+  .Work1 {
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-family: Nexa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    & div:nth-child(2) {
+        cursor: pointer;
+        transform: rotate(90deg);
+    }
+  }
+
+  .Work2, .Work3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Work2 input, .Work3 hr {
+    width: 140px;
+  
+    @include bp-up(sm) {
+      width: 400px;
+    }
+  }
+  
+  .Work2 input, .Work4 input {
+    border: 0px;
+    font-family: Nexa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background:rgba(39, 39, 39, 0);
+  }
+  
+  .Work2 input::content, .Work4 input::content {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .Work2 input::placeholder, .Work4 input::placeholder {
+    color: #908F8F;
+    font-family: Nexa;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .Work4 input {
+    width: 100%;
+    padding-bottom: 5%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .FinalWork5 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  
+  .Sending {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1.5% 3.7% 1.5% 3.7%;
+    font-family: "Nexa";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: red;
+    color: white;
+    transition: border 0.3s, background-color 0.3s, padding 0.2s, border-radius 0.378s, text-decoration 0.4s;
+    &:hover {
+        border: 2.5px white dotted;
+        border-radius: 8px;
+        text-decoration: underline;
+        padding: 1.5% 3% 1.5% 3%;
+        background: darkred;
+        color: white;
+    }
+  }
+  

@@ -1,0 +1,62 @@
+.Foots-Typipoop {
+    cursor: default;
+    margin: 3%;
+    color: #1A1A1A;
+    text-align: center;
+    font-family: Nexa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 7%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between; 
+
+    & div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    & .follow-us {
+        flex-direction: column;
+
+        @include bp-up(md) {
+            flex-direction: row;
+        }
+    }
+
+    & a {
+        cursor: pointer;
+        margin-top: -2px;
+        margin-left: 2px;
+    }
+
+    & .lm1 {
+        background-image: url("/images/facebook.png");
+        background-size: 100% 100%;
+        width: 32px;
+        height: 32px;
+    }
+
+    & .lm2 {
+        background-image: url("/images/instagram.png");
+        background-size: 100% 100%;
+        width: 32px;
+        height: 32px;
+    }
+
+    & .lm3 {
+        background-image: url("/images/twitter.png");
+        background-size: 100% 100%;
+        width: 32px;
+        height: 32px;
+    }
+
+    & .lm4 {
+        background-image: url("/images/in.png");
+        background-size: 100% 100%;
+        width: 32px;
+        height: 32px;
+    }
+}
