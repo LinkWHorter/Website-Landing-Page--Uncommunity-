@@ -57,4 +57,10 @@ document.addEventListener("DOMContentLoaded", function() {
       const destinationId = 'career';
       scrollToDiv(destinationId);
     });
+
+    document.getElementById('gets-started').addEventListener('click', function(event) {
+      event.preventDefault();
+      const destinationId = 'lets-works'; // Здесь вы можете определить id динамически
+      scrollToDiv(destinationId);
+    });
   });

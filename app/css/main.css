@@ -133,6 +133,19 @@ header > .container {
   position: relative;
   z-index: 1; }
 
+#tech-consult:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  background-color: #000;
+  z-index: -12;
+  transform: translate(-20%, -87.57%); }
+
+#tech-consult:before {
+  width: 100%;
+  height: 400px; }
+
 .content {
   overflow-y: hidden; }
   .content .h1-container, .content .h2-container {
@@ -276,6 +289,10 @@ header > .container {
           width: 500px;
           height: 100%; } }
 
+.content {
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
 .container-top {
   width: 100%;
   max-width: 100%; }
@@ -325,7 +342,10 @@ header > .container {
   justify-content: space-between; }
 
 .Work2 input, .Work3 hr {
-  width: 400px; }
+  width: 140px; }
+  @media (min-width: 568px) {
+    .Work2 input, .Work3 hr {
+      width: 400px; } }
 
 .Work2 input, .Work4 input {
   border: 0px;
@@ -454,6 +474,27 @@ svg {
       height: 100%;
       pointer-events: none; }
 
+.first-slider:after, .first-slider:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  background-color: #000;
+  z-index: -12;
+  transform: translate(-45%, 45%) rotate(5deg); }
+
+.first-slider:after {
+  width: 5500px;
+  height: 400px; }
+
+.first-slider:before {
+  width: 5500px;
+  height: 400px;
+  top: 300px; }
+
+.first-slider .slides div:nth-child(2) {
+  border: white 2px solid; }
+
 .first-slider .slides div:nth-child(2) {
   border: white 2px solid; }
 
@@ -524,8 +565,7 @@ svg {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: top;
-    height: 100%; }
+    background-position: top; }
 
 .container-fixed {
   height: 1003px; }

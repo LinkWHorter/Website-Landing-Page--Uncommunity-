@@ -34,6 +34,24 @@
   }
 }
 
+#tech-consult {
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: #000;
+    z-index: -12;
+    transform: translate(-20%, -87.57%);
+  }
+
+// ну типа тут стили специально для before.
+&:before {
+  width: 100%; // or pixels.
+  height: 400px;
+}
+}
+
 .content { 
   overflow-y: hidden;
   
@@ -236,6 +254,11 @@
   }
 }
 
+.content {
+  overflow-y: hidden;
+  overflow-x: hidden; 
+}
+
 .container-top {
   width: 100%;
   max-width: 100%;
@@ -292,7 +315,11 @@
 }
 
 .Work2 input, .Work3 hr {
-  width: 400px;
+  width: 140px;
+
+  @include bp-up(sm) {
+    width: 400px;
+  }
 }
 
 .Work2 input, .Work4 input {

@@ -61,8 +61,37 @@
   }
 }
 
-.first-slider .slides div:nth-child(2) {
-  border: white 2px solid;
+.first-slider {
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: #000;
+    z-index: -12;
+    transform: translate(-45%, 45%) rotate(5deg);
+  }
+
+  // ну типа тут стили специально для after.
+  &:after {
+    width: 5500px; // or pixels.
+    height: 400px;
+  }
+
+  // ну типа тут стили специально для before.
+  &:before {
+    width: 5500px; // or pixels.
+    height: 400px;
+    top: 300px;
+  }
+  & .slides div:nth-child(2) {
+    border: white 2px solid;
+  }
+
+  & .slides div:nth-child(2) {
+    border: white 2px solid;
+  }
 }
 
 .second-slider .slide-block {
@@ -145,7 +174,6 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: top;
-    height: 100%;
   }
 }
 
