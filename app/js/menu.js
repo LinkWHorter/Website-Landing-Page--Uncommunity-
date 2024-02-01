@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.querySelector('.lm4').addEventListener('click', function() {
-      messages = "https://ua.linkedin.com/in/кафедра-інженерної-та-комп-ютерної-графіки-лнту-8b4912b6";
+      messages = "https://github.com/LinkWHorter/Website-Landing-Page--Uncommunity-";
       document.querySelector('#change-link').textContent = messages;
       document.querySelector('#change-link').setAttribute('href', messages);
     });
