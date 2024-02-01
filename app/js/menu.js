@@ -111,20 +111,17 @@ document.addEventListener("DOMContentLoaded", function() {
   $(document).ready(function() {
     $(".pop-up").hide();
 
-    $("#link-mask1").click(function() {
-      $(".pop-up").hide().fadeIn(205);
-    });
-    $("#link-mask2").click(function() {
-      $(".pop-up").hide().fadeIn(205);
-    });
-    $("#link-mask3").click(function() {
-      $(".pop-up").hide().fadeIn(205);
-    });
-    $("#link-mask4").click(function() {
-      $(".pop-up").hide().fadeIn(205);
+    $("#link-mask1, #link-mask2, #link-mask3, #link-mask4").click(function() {
+      $(".pop-up").hide().fadeIn(3);
+      $(".mask").hide().fadeIn(104);
+      $(".pop-up-message").hide().fadeIn(205);
     });
 
     $(".mask").click(function() {
-      $(".pop-up").fadeOut(205);
+      $(".pop-up-message").fadeOut(205, function() {
+        $(".mask").fadeOut(104, function() {
+          $(".pop-up").fadeOut(3);
+        });
+      });
     })
   });

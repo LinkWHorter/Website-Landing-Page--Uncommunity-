@@ -5,6 +5,7 @@
 .content .container {
   & .flex-column {
     & h1 {
+        cursor: default;
         font-size: 48px;
         font-style: normal;
         font-weight: bold;
@@ -30,6 +31,17 @@
       background-color: white;
       position: relative;
       z-index: 1;
+      transition: color 0.25s, border 0.3s, background-color 0.3s, padding 0.2s, border-radius 0.378s, text-decoration 0.4s, filter 0.3s;
+
+      &:hover {
+        filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.725));
+        border: 2.5px white dotted;
+        border-radius: 8px;
+        text-decoration: none;
+        padding: 12.5px;
+        background: darkred;
+        color: white;
+      }
     }
   }
 }
@@ -59,6 +71,7 @@
     position: relative;
     
     & p:first-child {
+      cursor: default;
       color: #F00;
       text-align: center;
       font-family: Nexa;
@@ -191,6 +204,7 @@
 
       & .one-column {
         width: 75%;
+        cursor: default;
         text-align: center;
         margin: 0 auto;
 
@@ -303,6 +317,7 @@ svg {
     top: 25%;
     left: 50%;
     transform: translateX(-50%);
+    filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.735));
     width: fit-content;
     height: fit-content;
     padding: 1.5%;

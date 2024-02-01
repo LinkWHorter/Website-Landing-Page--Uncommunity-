@@ -12,11 +12,15 @@ header .menu {
   }
 
   & > a {
-    transition: color 0.3s;
+    transition: color 0.3s, font-size 0.3s, margin 0.5s;
     color: black;
 
     &:hover {
       color: red;
+      margin-top: -1px;
+      margin-left: -13.5px;
+      margin-right: -7.375px;
+      font-size: 19.5px;
     }
 
     &:active {
@@ -35,10 +39,6 @@ header .menu {
 
 .opened { 
   display: flex;
-}
-
-.opened-mask {
-  display: block;
 }
 
 .closed { 

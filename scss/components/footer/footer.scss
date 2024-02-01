@@ -28,8 +28,18 @@
 
     & a {
         cursor: pointer;
+        border-radius: 8px;
         margin-top: -2px;
         margin-left: 2px;
+        transition: width 0.3s, height 0.3s, margin 0.3s, border-radius 0.4s;
+
+        &:hover {
+            filter: drop-shadow(1.5px 3px 3px);
+            margin-top: -4px;
+            margin-left: 2.75px;
+            width: 34px;
+            height: 34px; 
+        }
     }
 
     & .lm1 {
