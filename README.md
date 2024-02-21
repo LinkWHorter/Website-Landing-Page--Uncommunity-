@@ -1,4 +1,4 @@
-#### Installation
+#### Installation (Outdated but still works)
 ```bash
 # python3.9 is often not available natively,
 # but we can rely on deadsnakes to provide it.
